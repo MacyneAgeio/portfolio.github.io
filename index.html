@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -24,12 +24,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #A66E38;">
       <div class="container-fluid">
         <a class="navbar-brand ms-4" style="color: beige;" href="#">APMM</a>
-        <a class="nav-link me-4"style="color: beige;" href="#home">Home</a>
-        <a class="nav-link me-4" style="color: beige;" href="#about">About</a>
-        <a class="nav-link me-4" style="color: beige;" href="#projects">Projects</a>
-        <a class="nav-link me-4" style="color: beige;" href="#contact">Contact</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="nav-link me-4" style="color: beige;" href="#home">Home</a>
+          <a class="nav-link me-4" style="color: beige;" href="#about">About</a>
+          <a class="nav-link me-4" style="color: beige;" href="#projects">Projects</a>
+          <a class="nav-link me-4" style="color: beige;" href="#contact">Contact</a>
+        </div>
       </div>
     </nav>
+
     <div class="container mt-4 pt-5 text-center" id="home">
       <h1>APMM PRESENTS: A PORTFOLIO'S JOURNEY</h1>
     </div>
@@ -47,25 +50,23 @@
     <div class="container mt-3">
       <h3 id="projects">PROJECTS</h3>
       <div class="row">
-        <div class="col-sm-5 mb-4 me-4.5">
-          <div class="card" style="width: 25rem;">
+        <div class="col-12 col-sm-6 col-md-5 mb-4 me-4">
+          <div class="card" style="width: 100%;">
             <img src="mood.png" class="card-img-top" alt="Placeholder" />
             <div class="card-body">
               <h5 class="card-title">Mood Tracker</h5>
               <p class="card-text">Facing difficulties in life? Do you want to keep track of your inner feelings and learn how to regulate them? Well, Take a leap and peek at this Website!</p>
-
               <a href="https://macyneageio.github.io/TrackYourMood.github.io/" class="btn btn-primary" style="background-color: #659287; border-color: #659287;">View Project</a>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-5 mb-4 me-4">
-          <div class="card" style="width: 25rem;">
+        <div class="col-12 col-sm-6 col-md-5 mb-4 me-4">
+          <div class="card" style="width: 100%;">
             <img src="crab2.jpg" class="card-img-top" alt="Placeholder" />
             <div class="card-body">
               <h5 class="card-title">Crustaceans</h5>
               <p class="card-text">Life can be a bit misleading and we often stereotype the little things in life. Want to find more about what Crustaceans really are? Come see!</p>
-              
               <a href="https://macyneageio.github.io/crabs.github.io/" class="btn btn-primary" style="background-color: #659287; border-color: #659287;">View Project</a>
             </div>
           </div>
@@ -75,32 +76,27 @@
 
     <div class="container">
       <h3>CONTACTS</h3>
-      <div class="form-group" style="width: 20rem;">
+      <div class="form-group w-100">
         <label for="user">Full Name:</label>
         <input type="text" class="form-control" id="user" />
       </div>
-      <div class="form-group" style="width: 20rem;">
+      <div class="form-group w-100">
         <label for="address">Email Address:</label>
         <input type="email" class="form-control" id="address" />
       </div>
-      <div class="form-group" style="width: 20rem;">
+      <div class="form-group w-100 mb-5">
         <label for="message">Message:</label>
         <textarea class="form-control" rows="5" id="message"></textarea>
       </div>
-      <button type="button" class="btn btn-primary mb-4 mt-4" style="background-color: #659287; border-color: #659287;">Submit
-      </button>
     </div>
 
-    <footer
-      class="text-center py-3 mt-auto"
-      id="contact"
-      style="background-color: #A66E38; height: 5rem;">
-
+    <footer class="text-center py-3 mt-auto w-100" id="contact" style="background-color: #A66E38; height: 5rem;">
       <a href="https://www.facebook.com/MacyneCalphys/" class="me-3">
-        <img src="facebook (1).png" alt="Facebook" /></a>
-
+        <img src="facebook (1).png" alt="Facebook" />
+      </a>
       <a href="https://www.instagram.com/leto_dell/">
-        <img src="instagram (1).png" alt="Instagram" /></a>
+        <img src="instagram (1).png" alt="Instagram" />
+      </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
